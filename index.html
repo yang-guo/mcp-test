@@ -12,30 +12,75 @@
             padding: 20px;
             background-color: #f0f0f0;
         }
-        h1 {
+        nav {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        h1, h2 {
             color: #333;
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
         }
-        ul {
+        .content-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .feature-list {
             background-color: white;
             padding: 20px 40px;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        li {
+        .feature-list li {
             margin: 10px 0;
             color: #666;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            color: #666;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <h1>Welcome to MCP Test</h1>
-    <p>This is a simple test page for our repository.</p>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
+    
+    <div class="content-section">
+        <h2>About Our Project</h2>
+        <p>This is a demonstration project showcasing various web development features and best practices. We're committed to creating clean, efficient, and user-friendly web experiences.</p>
+    </div>
+
+    <div class="content-section">
+        <h2>Key Features</h2>
+        <ul class="feature-list">
+            <li>Responsive design for all devices</li>
+            <li>Clean and modern user interface</li>
+            <li>Optimized performance</li>
+            <li>Accessible navigation</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Contact us: info@example.com</p>
+        <p>&copy; 2025 MCP Test Project. All rights reserved.</p>
+    </footer>
 </body>
 </html>
